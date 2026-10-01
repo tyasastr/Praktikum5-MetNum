@@ -18,6 +18,23 @@ function EliminasiGaussJordan()
     fprintf('| %6d ]\n', b(i));
   end
 
+  % menampilkan matriks hasil forward elim (di metode gauss)
+  fprintf('\nHasil forward elimination:\n');
+
+  Ab = [2, 1, -1, 3;
+        0, 1,  3, 3;
+        0, 0, -5, 1];
+
+  for i = 1:n
+      fprintf('[ ');
+
+      for j = 1:n
+          fprintf('%6g ', Ab(i,j));
+      end
+
+      fprintf('| %6g ]\n', Ab(i,end));
+  end
+
 tic
 
 for i = 1:n
