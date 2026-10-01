@@ -62,4 +62,6 @@ x = Ab(:, end);
 fprintf('Solusi akhir dalam pecahan: \n');
 for i = 1:n
   fprintf('[ %s ]\n', rats(x(i)));
+
+toc
 end
